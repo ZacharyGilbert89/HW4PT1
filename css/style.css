@@ -1,0 +1,180 @@
+@import url('https://fonts.cdnfonts.com/css/earth-orbiter');
+body {
+    margin:auto;
+    width: auto;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(-45deg, #23a6d5,#23a6d5, #a700df, #23d5ab,#23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease-in-out infinite;
+	height: auto;
+    background-attachment: fixed;
+}
+h1 {
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 5rem;
+}
+input::placeholder {
+    
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+#inputError{
+    padding: 4px;
+    margin-top: 10px;
+    color: red;
+}
+form {
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+    border-width: 5px;;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+fieldset {
+    font-weight: 500;
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;
+    font-size: x-large;
+    border:none;
+}
+label {
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;
+    padding: 5px;
+}
+label, input {
+    display: block;
+}
+input {
+    width:150px;
+    margin: auto;
+}
+#table {
+    margin:auto;
+    width:fit-content;
+    margin-left: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px;
+    max-width: 1000px;
+}
+table tr, th {
+    border: 1px solid black;
+}
+tr {
+    background: #10a9e2;
+}
+tr, th {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+tr::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+th::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+tr:nth-child(1) {
+    
+    background: #042c84;
+    border: none;
+    overflow: scroll;
+    top: 0;
+    position: sticky;
+    color: white;
+}
+th:nth-child(1) {
+    background: #042c84;
+    border: none;
+    left: 0;
+    overflow: scroll;
+    position: sticky;
+    color: white;
+}
+th:hover {
+    background-color: #0086df;
+}
+#minColSlider, #maxColSlider,#minRowSlider, #maxRowSlider {
+    margin:auto;
+    background: linear-gradient(-45deg, #23a6d5,#23a6d5, #a700df, #23d5ab,#23d5ab);
+    border-color:black;
+    width: 150px;
+}
+.closeTabs {
+    margin-top: 1rem;
+    background-color: white;
+    width: 5rem; 
+    height: 2.2rem;
+    cursor: pointer; 
+    float:right;
+}
+#addTab {
+    float:left;
+    margin-top: 1rem;
+    background-color: none;
+    width: 5rem; 
+    height: 2.2rem;
+    cursor: pointer; 
+}
+#tabs ul {
+    
+    border:none;
+    background:none;
+}
+#tabs {
+    background:transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    display:block;
+    border: none;
+    margin-left: -5px;
+    width: 100vw;
+    height: 50%;
+    margin-top: 1%;
+    overflow-x: auto; 
+    overflow-y: auto;
+}
+#tabs div {
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px;
+    max-width: 1000px;
+}
+#tabs li .ui-icon-close { 
+    cursor: pointer; 
+}
+#tabs li {
+    padding: none;
+    position:sticky;
+    border-radius:15%;
+    height: auto;
+    background: white;
+    width: 90px;
+}
+#tabs a {
+    color:black;
+}
+#tabs .ui-tabs-active{
+    color:white;
+    background-color:#b3b3b3;
+}
+#tabs table{
+    margin:auto;
+    width:fit-content;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
