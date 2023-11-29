@@ -62,6 +62,11 @@ input {
     max-height: 500px;
     max-width: 1000px;
 }
+#Submit {
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
 table tr, th {
     border: 1px solid black;
 }
