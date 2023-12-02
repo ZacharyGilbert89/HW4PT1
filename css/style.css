@@ -1,32 +1,33 @@
-@import url('https://fonts.cdnfonts.com/css/earth-orbiter');
+/* File: style.css
+GUI Assignment: HW3
+Zachary Gilbert, UMass Lowell Computer Science,
+Zachary_Gilbert@student.uml.edu
+Copyright (c) 2023 by Zachary Gilbert. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by ZG on December 1, 2023 at 11:30 AM */
+@import url('https://fonts.cdnfonts.com/css/earth-orbiter');/*Font import*/
 body {
-    margin:auto;
-    width: auto;
-    backdrop-filter: blur(10px);
-    background: linear-gradient(-45deg, #23a6d5,#23a6d5, #a700df, #23d5ab,#23d5ab);
+    margin:auto;/*Centers*/
+    width: auto;/*Fills screen*/
+    backdrop-filter: blur(10px);/*Blur effect in background*/
+    background: linear-gradient(-45deg, #23a6d5,#23a6d5, #a700df, #23d5ab,#23d5ab); /*Background Gradient*/
 	background-size: 400% 400%;
-	animation: gradient 10s ease-in-out infinite;
-	height: auto;
+	animation: gradient 10s ease-in-out infinite;/*Animation Call*/
+	height: auto;/*Fills screen*/
     background-attachment: fixed;
 }
 h1 {
-    font-family: 'Earth Orbiter Extra-Bold', sans-serif;
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;/*Font*/
     margin-top: 30px;
     text-align: center;
     font-size: 5rem;
 }
-input::placeholder {
-    
+input::placeholder {/*Sample input placeholding text*/
     text-align: center;
     color: black;
     font-weight: bold;
 }
-#inputError{
-    padding: 4px;
-    margin-top: 10px;
-    color: red;
-}
-form {
+form {/*Form styling for input*/
     margin: auto;
     border: 1px solid black;
     padding: 20px;
@@ -36,33 +37,33 @@ form {
     margin-bottom: 20px;
     text-align: center;
 }
-fieldset {
+fieldset {/*Title for form*/
     font-weight: 500;
     font-family: 'Earth Orbiter Extra-Bold', sans-serif;
     font-size: x-large;
     border:none;
 }
-label {
+label {/*Styling for inputs*/
     font-family: 'Earth Orbiter Extra-Bold', sans-serif;
     padding: 5px;
 }
 label, input {
     display: block;
 }
-input {
+input {/*Styling for input boxes*/
     width:150px;
     margin: auto;
 }
-#table {
+#table {/*Centers table*/
     margin:auto;
     width:fit-content;
     margin-left: auto;
     overflow-x: auto;
     overflow-y: auto;
-    max-height: 500px;
-    max-width: 1000px;
+    max-height: 500px;/*Sets max height so table doesnt go beyond view*/
+    max-width: 1000px;/*Sets max width so table doesnt go beyond view*/
 }
-#Submit {
+#Submit {/*Styling for submit button*/
     margin:auto;
     margin-top: 15px;
     margin-bottom: -15px;
@@ -83,8 +84,7 @@ tr::-webkit-scrollbar {
 th::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
-tr:nth-child(1) {
-    
+tr:nth-child(1) {/*Makes the row sticky so when user scrolls, the row stays the same position in the viewport*/
     background: #042c84;
     border: none;
     overflow: scroll;
@@ -92,7 +92,7 @@ tr:nth-child(1) {
     position: sticky;
     color: white;
 }
-th:nth-child(1) {
+th:nth-child(1) {/*Makes the column sticky so when user scrolls, the column stays the same position in the viewport*/
     background: #042c84;
     border: none;
     left: 0;
@@ -101,9 +101,9 @@ th:nth-child(1) {
     color: white;
 }
 th:hover {
-    background-color: #0086df;
+    background-color: #0086df;/*When cell is hovered over it will highlight*/
 }
-@keyframes gradient {
+@keyframes gradient { /*Animation for background*/
 	0% {
 		background-position: 0% 50%;
 	}

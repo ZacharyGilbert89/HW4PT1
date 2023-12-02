@@ -1,3 +1,12 @@
+<!--
+File: index.html
+GUI Assignment: HW3
+Zachary Gilbert, UMass Lowell Computer Science,
+Zachary_Gilbert@student.uml.edu
+Copyright (c) 2023 by Zachary Gilbert. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by ZG on December 1, 2023 at 11:30 AM
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,23 +20,21 @@
   </head>
   <body>
     <div class="heading">
-      <h1>Multiplication Table</h1>
+      <h1>Multiplication Table</h1><!--Heading-->
     </div>
     <form id="form">
-      <fieldset>Values for Multiplication Table</fieldset>
-        <label for="minCol">Minimum Column Value:</label>
+      <fieldset>Values for Multiplication Table</fieldset><!--title for form-->
+        <label for="minCol">Minimum Column Value:</label><!--Label for minCol-->
         <input type="number" id="minCol" name="minCol" value = 0><br>
-        <label for="maxCol">Maximum Column Value:</label>
+        <label for="maxCol">Maximum Column Value:</label><!--Label for maxCol-->
         <input type="number" id="maxCol" name="maxCol" value = 0><br>
-        <label for="minRow">Minimum Row Value:</label>
+        <label for="minRow">Minimum Row Value:</label><!--Label for minRow-->
         <input type="number" id="minRow" name="minRow" value = 0><br>
-        <label for="maxRow">Maximum Row Value:</label>
+        <label for="maxRow">Maximum Row Value:</label><!--Label for maxRow-->
         <input type="number" id="maxRow" name="maxRow" value = 0><br>
-        <button id="submit" type="submit">Submit</button>
-        <p id = "inputError"></p>
+        <button id="submit" type="submit">Submit</button><!--Submit Button-->
       </form>
-      <div id="table"></div>
+      <div id="table"></div><!--Starting Div for the table-->
       </div>
-      
       <script src="js/script.js"></script>
   </body>
