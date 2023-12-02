@@ -1,5 +1,5 @@
 // File: script.js
-// GUI Assignment: HW3
+// GUI Assignment: HW4
 // Zachary Gilbert, UMass Lowell Computer Science,
 // Zachary_Gilbert@student.uml.edu
 // Copyright (c) 2023 by Zachary Gilbert. All rights reserved. May be freely copied or
